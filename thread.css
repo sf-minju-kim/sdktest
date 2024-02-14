@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* common */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  background: #f1f2f6;
+  padding: 0;
+  margin: 0;
+}
+div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.noselect {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 25px;
+}
+.message {
+  font-size: 13px;
+  padding: 6px 20px;
+  color: #999;
+  margin-bottom: 8px;
+}
+.simulators {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/* simulator */
+.simulator {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 4px;
+}
+.simulator .user {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 6px;
+  padding: 28px 36px;
+  margin-bottom: 8px;
+  box-shadow: 1px 1px 1px #ddd;
+}
+.simulator .user .user-id {
+  flex: 1;
+  font-size: 24px;
+}
+.simulator .channel {
+  display: flex;
+  padding: 28px 36px;
+  background: #444;
+  color: #fff;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  box-shadow: 1px 1px 1px #ddd;
+}
+.simulator .channel .label {
+  flex: 1;
+}
+.simulator .channel .total-unread-reply-count {
+  font-size: 24px;
+}
+.simulator .chat {
+  display: flex;
+  flex-direction: row;
+  height: 480px;
+  margin-bottom: 8px;
+}
+.simulator .chat .chat-pannel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px #ddd;
+}
+.simulator .chat .chat-pannel .title {
+  font-size: 12px;
+  color: #999;
+  padding: 12px 18px;
+}
+.simulator .chat .chat-pannel .list {
+  flex: 1;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.simulator .chat .all-messages,
+.simulator .chat .reply-messages {
+  margin-right: 8px;
+}
+
+/* message */
+.chat-message {
+  display: flex;
+  flex-direction: row;
+  font-size: 11px;
+  padding: 10px 16px;
+  align-items: center;
+}
+.chat-message:hover {
+  cursor: pointer;
+  background: #eee;
+}
+.chat-message.selected {
+  background: #ddd;
+}
+.chat-message .icon {
+  width: 16px;
+  font-size: 13px;
+  margin-right: 4px;
+}
+.chat-message .content {
+  flex: 1;
+}
+.chat-message .count {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  color: #555;
+  margin-left: 6px;
+  align-items: center;
+}
+.chat-message .count .icon {
+  margin-right: 2px;
+}
+.chat-message .delete {
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.chat-message .delete:hover {
+  cursor: pointer;
+  background: #ccc;
+}
+
+/* control */
+.simulator .control {
+  display: flex;
+  background: #444;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px #ddd;
+}
+.simulator .control .button {
+  display: flex;
+  padding: 8px 12px;
+  margin: 4px;
+  border-radius: 6px;
+  align-items: center;
+}
+.simulator .control .button:hover {
+  cursor: pointer;
+  background: #555;
+}
+.simulator .control .button .icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+.simulator .control .pad {
+  flex: 1;
+}

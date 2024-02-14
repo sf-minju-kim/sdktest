@@ -1,0 +1,1 @@
+import{c as t,b1 as n}from"./__bundle-7758e8a8.js";var e=function(t){return["-lastMessageUpdatedAt","-createdAt","syncIndex"]},a=function(n){function e(){return null!==n&&n.apply(this,arguments)||this}return t(e,n),e}(n);export{a as N,e as g};
